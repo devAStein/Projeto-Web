@@ -15,9 +15,19 @@ header .logo img{
     width: 80px;
 }
 
+main .img-topo-site img{
+    width: 250px;
+    margin-top: 25%;
+    margin-left: 100px;
+}
+
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
 }
 
 /* Estilo do cabeçalho */
@@ -40,7 +50,7 @@ header a{
 }
 
 header a:hover{
-    color: #fff;
+    color: #00FF08;
     transform: scale(1.25);
 }
 
@@ -64,6 +74,66 @@ header .btn-contato button{
 }
 
 header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+    box-shadow: 0px 0px 8px #00ff08;   
 }
 
+main .btn-baixar button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+main .btn-baixar button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.25);
+    transition: .2s;
+}
+
+/* Estilo do topo do site */
+
+
+section .topo-do-site{
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    margin-top: 10%;
+    color: white;
+    font-size: 42px;
+}
+
+.topo-do-site span{
+    color: #00ff08;
+    font-size: 30px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+    font-size: 17px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
